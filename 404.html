@@ -2,11 +2,19 @@
 <html>
 <head>
   <title>Redirecting...</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89117598-8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-89117598-8');
+  </script>
 </head>
 <body>
   <noscript><b>JavaScript must be enabled for this redirect to work</b></noscript>
   <p>Redirecting you to <a href="https://twitchbot.io" id="link">twitchbot.io</a>...</p>
-  <script>
+  <script async defer>
     var redirect = "https://twitchbot.io" + window.location.pathname;
     var link = document.getElementById("link");
     link.href = redirect;
